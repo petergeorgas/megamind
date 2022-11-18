@@ -1,0 +1,6 @@
+[submodule "smart-mirror-api-gateway"]
+	path = smart-mirror-api-gateway
+	url = https://github.com/petergeorgas/smart-mirror-api-gateway.git
+[submodule "smart-mirror-cloud-sync"]
+	path = smart-mirror-cloud-sync
+	url = https://github.com/petergeorgas/smart-mirror-cloud-sync.git

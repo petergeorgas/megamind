@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  api-gateway :
+    build:
+      dockerfile: Dockerfile
+      context: ./smart-mirror-api-gateway
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/opt/app/api
+  downloader :
+    build:
+      dockerfile: Dockerfile
+      context: ./smart-mirror-cloud-sync
+    volumes:
+      - ./downloads:/app/downloads
